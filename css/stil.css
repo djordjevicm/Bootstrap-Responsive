@@ -1,0 +1,54 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.moj-header {
+  height: 50vh;
+  min-height: 300px;
+  background: url('../slike/header-jesen.jpg') center center no-repeat scroll;
+  background-size: cover;
+ }
+
+ .card {
+ 	height: 100%;
+ }
+
+ .pozadina-header-footer {
+ 	background-color: #283903;
+ }
+
+ a {
+ 	color: #283903;
+ }
+
+ a:hover {
+ 	color: #1b2507;
+ }
+
+ .btn-primary {
+ 	background-color: #283903;
+ 	border-color: #283903;
+ }
+
+ .btn-primary:hover {
+ 	background-color: #1b2507;
+ 	border-color: #283903;
+ }
+
+ .reference-card {
+ 	margin-bottom: 30px;
+ }
+
+ .page-link {
+ 	color: #283903;
+ }
+
+ .page-link:hover {
+ 	color: #1b2507;
+ }

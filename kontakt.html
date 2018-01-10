@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Kontakt</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/stil.css" type="text/css" rel="stylesheet">
+
+		<!-- JS biblioteke  -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<!--navigacija -->
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark pozadina-header-footer">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+    				<img src="slike/logo1.png"  width="50" height="50" alt="">
+  				</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smanjiNav">
+    				<span class="navbar-toggler-icon"></span>
+    			</button>
+    			<div class="collapse navbar-collapse" id="smanjiNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html" title="Naslovna">Naslovna</a></li>
+						<li class="nav-item"><a class="nav-link " href="onama.html" title="Onama">O nama</a></li>
+						<li class="nav-item"><a class="nav-link" href="reference.html" title="Reference">Reference</a></li>
+						<li class="nav-item"><a class="nav-link active" href="kontakt.html" title="Kontakt">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+
+		<div class="container">
+			<!-- Page Heading -->
+	      	<h1 class="mt-4 mb-3">Kontakt</h1>	
+
+	      	<!-- Paginacija -->
+	      	<nav aria-label="breadcrumb" role="navigation">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a href="#">Naslovna</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
+			  </ol>
+			</nav>
+
+
+	    	<div class="row">
+	    	 	<div class="col-lg-8 mb-4">
+
+          <!-- Embedded Google Map -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45294.546342520465!2d20.35181912817793!3d44.80304017370849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6f75c3e024c5%3A0xe6866a73d4bdda43!2z0J3QvtCy0Lgg0JHQtdC-0LPRgNCw0LQsINCR0LXQvtCz0YDQsNC0!5e0!3m2!1ssr!2srs!4v1513179829380" width="600" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Contact Details Column -->
+        <div class="col-lg-4 mb-4">
+          <h3>Kontaktirajte nas</h3>
+
+			<address>
+	            <strong>Nasa firma</strong>
+	            <br>Ulica i broj
+	            <br>Grad, postanski broj
+	            <br>
+	          </address>
+	          <address>
+	            <abbr title="Telefon">T:</abbr>
+	            (123) 000-0000
+	            <br>
+	            <abbr title="Email">E:</abbr>
+	            <a href="mailto:#">name@example.com</a>
+
+	          </address>
+
+
+        </div>
+
+      <!-- Kontakt Forma -->
+      
+      <div class="row">
+        <div class="col-lg-8 mb-4">
+          <h3>Posaljite nam poruku</h3>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Ime i prezime:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Molimo vas da unesete vase ime i prezime.">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Telefon:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Molim vas unesite vas telefon.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Email adresa:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Molimo vas da unesete vas email.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Poruka:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Molim vas da unesete vasu poruku" maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+            
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">Posalji poruku</button>
+          </form>
+        </div>
+
+      </div>
+</div>
+		</div>
+		<!-- Footer -->
+	    <footer class="py-5 pozadina-header-footer" >
+	      <div class="container">
+	        <p class="m-0 text-center text-white">Copyright &copy; Milivoje Djordjevic, 2017</p>
+	      </div>
+	      <!-- /.container -->
+	    </footer>
+		
+	</body>
+</html>
